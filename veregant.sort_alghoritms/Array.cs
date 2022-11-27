@@ -30,12 +30,12 @@ namespace veregant.sort_alghoritms
 
         public override string ToString()
         {
-            string _string = "";
+            string str = "";
             foreach (int _integer in Integers)
             {
-                _string += (_integer.ToString() + "\n");
+                str += (_integer.ToString() + "\n");
             }
-            return _string;
+            return str;
         }
     }
 }
