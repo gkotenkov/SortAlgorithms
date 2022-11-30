@@ -3,5 +3,6 @@
     internal interface ISorted
     {
         int[] Sort(int[] _integers);
+
     }
 }

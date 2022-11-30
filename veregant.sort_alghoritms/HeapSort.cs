@@ -34,7 +34,7 @@
 
             if (largest != i)
             {
-                Helpers.Swap(ref _integers[i], ref _integers[largest]);
+                Helpers<int>.Swap(ref _integers[i], ref _integers[largest]);
 
                 Heapify(ref _integers, n, largest);
             }

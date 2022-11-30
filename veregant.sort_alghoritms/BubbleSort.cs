@@ -11,14 +11,14 @@
                 {
                     if (_integers[j] > _integers[j + 1])
                     {
-                        Helpers.Swap(ref _integers[j], ref _integers[j + 1]);
+                        Helpers<int>.Swap(ref _integers[j], ref _integers[j + 1]);
                     }
                 }
             }
         }
 
         public int[] Sort(int[] _integers)
-        {   
+        {
             Bubble(ref _integers);
 
             return _integers;

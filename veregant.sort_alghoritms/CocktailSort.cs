@@ -1,8 +1,8 @@
 ﻿namespace veregant.sort_alghoritms
 {
-    internal class ShakerSort : ISorted
+    internal class CocktailSort : ISorted
     {
-        public void Shaker(ref int[] _integers)
+        public void Cocktail(ref int[] _integers)
         {
             if (_integers == null)
             {
@@ -18,7 +18,7 @@
                 {
                     if (_integers[i - 1] > _integers[i])
                     {
-                        Helpers.Swap(ref _integers[i - 1], ref _integers[i]);
+                        Helpers<int>.Swap(ref _integers[i - 1], ref _integers[i]);
                     }
                 }
                 left++;
@@ -26,7 +26,7 @@
                 {
                     if (_integers[i] > _integers[i + 1])
                     {
-                        Helpers.Swap(ref _integers[i + 1], ref _integers[i]);
+                        Helpers<int>.Swap(ref _integers[i + 1], ref _integers[i]);
                     }
                 }
                 right--;
@@ -36,7 +36,7 @@
 
         public int[] Sort(int[] _integers)
         {
-            Shaker(ref _integers);
+            Cocktail(ref _integers);
 
             return _integers;
         }

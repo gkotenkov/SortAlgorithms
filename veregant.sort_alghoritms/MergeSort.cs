@@ -42,8 +42,8 @@
                 _integers[_low + i] = tempIntegers[i];
             }
         }
-        
-        public void MergeSorting (ref int[] _integers, int _low, int _high)
+
+        public void MergeSorting(ref int[] _integers, int _low, int _high)
         {
             if (_low < _high)
             {

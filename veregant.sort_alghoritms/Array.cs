@@ -10,7 +10,7 @@ namespace veregant.sort_alghoritms
 
         public static int Length = 20;
 
-        public Array (ISorted _sorted)
+        public Array(ISorted _sorted)
         {
             this.Integers = new int[Length];
             this.Sorted = _sorted;
@@ -28,6 +28,15 @@ namespace veregant.sort_alghoritms
             this.Integers = this.Sorted.Sort(Integers);
         }
 
+        public void Test()
+        {
+            Console.WriteLine(this);
+            this.Sort();
+            Console.ReadLine();
+            Console.WriteLine(this);
+            Console.ReadLine();
+        }
+
         public override string ToString()
         {
             string str = "";
@@ -37,5 +46,7 @@ namespace veregant.sort_alghoritms
             }
             return str;
         }
+
+
     }
 }
